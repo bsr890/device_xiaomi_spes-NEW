@@ -16,6 +16,10 @@ rm -rf hardware/lineage/compat/Android.bp
 git clone https://github.com/ofcsayan/vendor_xiaomi_spes -b 14 vendor/xiaomi/spes
 git clone https://github.com/muralivijay/kernel_xiaomi_sm6225 kernel/xiaomi/sm6225
 
+
+# Lineage-21 Hardware Source
+git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
+
 # MiuiCamera
 #git clone https://gitlab.com/ThankYouMario/proprietary_vendor_xiaomi_camera -b uvite-sm6225 vendor/xiaomi/camera
 
