@@ -31,3 +31,7 @@
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
 </resources>
+
+    <bool name="config_enable_charging_info">true</bool>
+    
+    name="config_show_charging_remaining_time">true</bool>
