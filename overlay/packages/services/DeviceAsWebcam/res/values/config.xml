@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!-- Copyright (C) 2015-2020 The Linux Foundation. All rights reserved.
-     Not a contribution.
-     Copyright (C) 2012 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2024 YAAP
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,10 +13,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<Included>
-    <Decoders>
-        <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
-        <!-- SimpleOMXComponet based software decoder-->
-        <MediaCodec name="OMX.google.raw.decoder" type="audio/raw" update="true" rank="1"/>
-    </Decoders>
-</Included>
+<resources>
+
+    <!-- Whether hardware video encoding is supported. default: true -->
+    <bool name="config_HardwareVideoEncode" translatable="false">false</bool>
+
+    <!-- Whether to default to HQ mode. default: false -->
+    <bool name="config_HighQualityVideoDefault" translatable="false">true</bool>
+
+</resources>

@@ -71,7 +71,6 @@ vendor.voice.path.for.pcm.voip=true
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
-persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
@@ -79,11 +78,11 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.soc=cherokee
 ro.bluetooth.a2dp_offload.supported=true
-vendor.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 persist.camera.gyro.disable=0
+persist.vendor.camera.perflock.enable=0
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
@@ -154,7 +153,6 @@ ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.use_color_management=true
-ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.refresh_rate_switching=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.type=oled
@@ -189,8 +187,6 @@ vendor.display.override_doze_mode=1
 
 # Media Codecs
 debug.stagefright.ccodec=1
-debug.stagefright.omx_default_rank=0
-debug.stagefright.omx_default_rank.sw-audio=1
 vendor.media.target.version=3
 vendor.sys.media.target.version=3
 
@@ -259,7 +255,9 @@ ro.vendor.audio.soundtrigger.xatx.vop.level=10
 ro.vendor.audio.soundtrigger=sva
 
 # USB
+vendor.usb.device=4e00000.ssusb
 vendor.usb.diag.func.name=diag
+ro.usb.uvc.enabled=true
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss
 vendor.usb.rmnet.func.name=gsi
